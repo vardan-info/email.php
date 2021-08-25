@@ -7,7 +7,7 @@
    <body>
       <?php
          
-         // define variables and set to empty values
+         //  values
          $name = $email = $gender = $comment = $website = "";
          
          if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -26,48 +26,32 @@
          }
       ?>
    
-      <h2>Tutorials Point Absolute classes registration</h2>
+      <h2>Form php/h2>
       
       <form method = "post" action = "/php/php_form_introduction.htm">
-         <table>
-            <tr>
-               <td>Name:</td> 
-               <td><input type = "text" name = "name"></td>
-            </tr>
+        
+             
+               <td><input type = "text" name = "name">
             
-            <tr>
-               <td>E-mail:</td>
-               <td><input type = "text" name = "email"></td>
-            </tr>
+               
+               <input type = "text" name = "email">
+           
+               
+               <input type = "text" name = "website">
             
-            <tr>
-               <td>Specific Time:</td>
-               <td><input type = "text" name = "website"></td>
-            </tr>
+               
             
-            <tr>
-               <td>Class details:</td>
-               <td><textarea name = "comment" rows = "5" cols = "40"></textarea></td>
-            </tr>
-            
-            <tr>
-               <td>Gender:</td>
-               <td>
+           ><textarea name = "comment" rows = "5" cols = "40"></textarea></td>
+        
                   <input type = "radio" name = "gender" value = "female">Female
                   <input type = "radio" name = "gender" value = "male">Male
-               </td>
-            </tr>
-            
-            <tr>
-               <td>
+             
                   <input type = "submit" name = "submit" value = "Submit"> 
-               </td>
-            </tr>
-         </table>
+             
       </form>
       
       <?php
-         echo "<h2>Your Given details are as :</h2>";
+        
          echo $name;
          echo "<br>";
          
